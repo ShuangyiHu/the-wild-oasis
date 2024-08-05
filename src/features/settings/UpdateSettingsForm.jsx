@@ -1,3 +1,4 @@
+import Button from "../../ui/Button";
 import Form from "../../ui/Form";
 import FormRow from "../../ui/FormRow";
 import Input from "../../ui/Input";
@@ -61,7 +62,9 @@ function UpdateSettingsForm() {
           onBlur={(e) => onHandleUpdateSetting(e, "breakfastPrice")}
         />
       </FormRow>
-      <button disabled={isWorking}>Update</button>
+      <Button disabled={isWorking} size="large" variation="primary">
+        Update
+      </Button>
     </Form>
   );
 }
